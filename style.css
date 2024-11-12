@@ -1,0 +1,114 @@
+/* Make the app fit full screen */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+input[type="text"], input[type="date"], input[type="time"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  flex-grow: 1;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+li.completed {
+  text-decoration: line-through;
+  background-color: #d4edda;
+}
+
+.task-text {
+  width: 50%;
+}
+
+.countdown {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.task-actions button {
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.task-actions button:hover {
+  background-color: #e0a800;
+}
+
+.task-actions .delete-btn {
+  background-color: #dc3545;
+}
+
+.task-actions .delete-btn:hover {
+  background-color: #c82333;
+}
+
+.checkbox {
+  flex-shrink: 0;
+}
